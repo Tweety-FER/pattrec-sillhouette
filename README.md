@@ -14,8 +14,8 @@ Raspoznavanje Uzoraka - Projekt #7: Raspoznavanje aktivnosti osoba na temelju si
 
 ## Zadaci
 
-- [  ] Uklanjanje pozadine i dobivanje konture
-- [  ] Pretvaranje u chain code
-- [  ] Konture -> vektori
-- [  ] Klasifikator
-- [  ] Smoothing
+- [ ] Uklanjanje pozadine i dobivanje konture
+- [ ] Pretvaranje u chain code
+- [ ] Konture -> vektori
+- [ ] Klasifikator
+- [ ] Smoothing
