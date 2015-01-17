@@ -2,16 +2,21 @@
 \contentsline {chapter}{\numberline {1}Projektni zadatak}{1}
 \contentsline {section}{\numberline {1.1}Opis projektnog zadatka}{1}
 \contentsline {section}{\numberline {1.2}Pregled i opis srodnih rje\IeC {\v s}enja}{1}
-\contentsline {section}{\numberline {1.3}Konceptualno rje\IeC {\v s}enje zadatka}{1}
-\contentsline {chapter}{\numberline {2}Postupak rje\IeC {\v s}avanja zadatka}{2}
-\contentsline {section}{\numberline {2.1}Naziv prvog koraka}{2}
-\contentsline {subsection}{\numberline {2.1.1}Naziv prvog algoritma}{2}
-\contentsline {subsection}{\numberline {2.1.2}Naziv drugog algoritma}{2}
-\contentsline {section}{\numberline {2.2}Naziv drugog koraka}{2}
-\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{3}
-\contentsline {section}{\numberline {3.1}Ispitna baza}{3}
-\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{3}
-\contentsline {section}{\numberline {3.3}Analiza rezultata}{3}
-\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{4}
-\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{5}
-\contentsline {chapter}{\numberline {6}Literatura}{6}
+\contentsline {section}{\numberline {1.3}Konceptualno rje\IeC {\v s}enje zadatka}{3}
+\contentsline {subsection}{\numberline {1.3.1}Baza}{3}
+\contentsline {subsection}{\numberline {1.3.2}Arhitektura sustava}{3}
+\contentsline {chapter}{\numberline {2}Postupak rje\IeC {\v s}avanja zadatka}{5}
+\contentsline {section}{\numberline {2.1}Izdvajanje pozadine}{5}
+\contentsline {subsection}{\numberline {2.1.1}Transformacija slike u boji u sliku intenziteta}{5}
+\contentsline {subsection}{\numberline {2.1.2}Statisti\IeC {\v c}ki model izdvajanja pozadine}{5}
+\contentsline {section}{\numberline {2.2}Reprezentacija siluete}{6}
+\contentsline {section}{\numberline {2.3}Izlu\IeC {\v c}ivanje vektora zna\IeC {\v c}ajki}{6}
+\contentsline {section}{\numberline {2.4}Klasifikacija}{6}
+\contentsline {section}{\numberline {2.5}Vremensko zagla\IeC {\dj }ivanje}{6}
+\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{7}
+\contentsline {section}{\numberline {3.1}Ispitna baza}{7}
+\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{7}
+\contentsline {section}{\numberline {3.3}Analiza rezultata}{7}
+\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{8}
+\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{9}
+\contentsline {chapter}{\numberline {6}Literatura}{10}
