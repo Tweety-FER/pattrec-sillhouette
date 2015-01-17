@@ -2,21 +2,24 @@
 \contentsline {chapter}{\numberline {1}Projektni zadatak}{1}
 \contentsline {section}{\numberline {1.1}Opis projektnog zadatka}{1}
 \contentsline {section}{\numberline {1.2}Pregled i opis srodnih rje\IeC {\v s}enja}{1}
+\contentsline {subsubsection}{ \IeC {\textbullet } Andrea Bottino, Aldo Laurentini A silhouette based technique for the reconstruction of human movement }{1}
+\contentsline {subsubsection}{ Meghna Singh, Anup Basu, Mrinal Kr. Mandal Human activity recognition based on silhouette directionality }{2}
+\contentsline {subsubsection}{ Liang Wang, Weiming Hu, Tieniu Tan Recent developments in human motion analysis }{3}
 \contentsline {section}{\numberline {1.3}Konceptualno rje\IeC {\v s}enje zadatka}{3}
 \contentsline {subsection}{\numberline {1.3.1}Baza}{3}
-\contentsline {subsection}{\numberline {1.3.2}Arhitektura sustava}{3}
-\contentsline {chapter}{\numberline {2}Postupak rje\IeC {\v s}avanja zadatka}{5}
-\contentsline {section}{\numberline {2.1}Izdvajanje pozadine}{5}
-\contentsline {subsection}{\numberline {2.1.1}Transformacija slike u boji u sliku intenziteta}{5}
-\contentsline {subsection}{\numberline {2.1.2}Statisti\IeC {\v c}ki model izdvajanja pozadine}{5}
-\contentsline {section}{\numberline {2.2}Reprezentacija siluete}{6}
-\contentsline {section}{\numberline {2.3}Izlu\IeC {\v c}ivanje vektora zna\IeC {\v c}ajki}{6}
-\contentsline {section}{\numberline {2.4}Klasifikacija}{6}
-\contentsline {section}{\numberline {2.5}Vremensko zagla\IeC {\dj }ivanje}{6}
-\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{7}
-\contentsline {section}{\numberline {3.1}Ispitna baza}{7}
-\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{7}
-\contentsline {section}{\numberline {3.3}Analiza rezultata}{7}
-\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{8}
-\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{9}
-\contentsline {chapter}{\numberline {6}Literatura}{10}
+\contentsline {subsection}{\numberline {1.3.2}Arhitektura sustava}{5}
+\contentsline {chapter}{\numberline {2}Postupak rje\IeC {\v s}avanja zadatka}{8}
+\contentsline {section}{\numberline {2.1}Izdvajanje pozadine}{8}
+\contentsline {subsection}{\numberline {2.1.1}Transformacija slike u boji u sliku intenziteta}{8}
+\contentsline {subsection}{\numberline {2.1.2}Statisti\IeC {\v c}ki model izdvajanja pozadine}{8}
+\contentsline {section}{\numberline {2.2}Reprezentacija siluete}{9}
+\contentsline {section}{\numberline {2.3}Izlu\IeC {\v c}ivanje vektora zna\IeC {\v c}ajki}{9}
+\contentsline {section}{\numberline {2.4}Klasifikacija}{9}
+\contentsline {section}{\numberline {2.5}Vremensko zagla\IeC {\dj }ivanje}{9}
+\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{10}
+\contentsline {section}{\numberline {3.1}Ispitna baza}{10}
+\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{10}
+\contentsline {section}{\numberline {3.3}Analiza rezultata}{10}
+\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{11}
+\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{12}
+\contentsline {chapter}{\numberline {6}Literatura}{13}
