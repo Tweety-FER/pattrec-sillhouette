@@ -4,6 +4,14 @@ Raspoznavanje Uzoraka - Projekt #7: Raspoznavanje aktivnosti osoba na temelju si
 
 ---
 
+## Pokretanje
+
+Pokretanje iz komandne linije vrši se kroz program segmentation.py
+
+Pokretanje uz GUI vrši se pokretanjem programa gui.py
+
+---
+
 ## Podjela Posla
 
 1. Uklanjanje pozadine i dobivanje konture - Igor
