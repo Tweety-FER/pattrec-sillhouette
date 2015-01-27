@@ -353,9 +353,21 @@ Ta frekvencija se dijeli sa sumom frekvencija pojavljivanja svih vektora smjera 
 Normalizacijom smo postigli to da naš program ne ovisi o tome koliko je osoba koja radi neku radnju udaljena od kamere jer je sustav postao otporan
 na razlike u veličini chain koda. Drugim riječima, razlika između dva vektora koji predstavljaju istu radnju na različitim udaljenostima od kamere će biti malena, dok će razlika između 2 vektora koji predstavljaju dvije različite radnje biti daleko veća.
 
-% TODO (sad dvije slike histograma onih, npr pokazivanje lijevo i desno)
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{vecwalk.png}
+\caption{Vektorski prikaz videa hoda}
+\label{img:vecwalk}
+\end{figure}
 
-Razlike između histograma koji predstavljaju različite radnje su lako vidljive, kao što i vidimo na priloženim slikama (labele slika). Te razlike će biti dovoljne za klasificiranje različitih radnji.
+Razlike između histograma koji predstavljaju različite radnje su lako vidljive, kao što i vidimo na priloženim slikama \ref{img:vecwalk}, koja predstavlja video hodanja, te \ref{img:vecbend}, koji je vektor videa saginjanja. Te razlike će biti dovoljne za klasificiranje različitih radnji, iako, primjerice, baš dane dvije akcije imaju slične vrijednosti grafova.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[scale=0.7]{vecbend.png}
+\caption{Vektorski prikaz videa saginjanja}
+\label{img:vecbend}
+\end{figure}
 
 \section{Klasifikacija}
 

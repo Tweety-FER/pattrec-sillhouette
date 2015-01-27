@@ -14,12 +14,12 @@
 \contentsline {subsection}{\numberline {2.1.2}Statisti\IeC {\v c}ki model izdvajanja pozadine}{8}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Reprezentacija siluete}{9}{section.2.2}
 \contentsline {section}{\numberline {2.3}Izlu\IeC {\v c}ivanje vektora zna\IeC {\v c}ajki}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}Klasifikacija}{10}{section.2.4}
-\contentsline {section}{\numberline {2.5}Vremensko zagla\IeC {\dj }ivanje}{11}{section.2.5}
-\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{12}{chapter.3}
-\contentsline {section}{\numberline {3.1}Ispitna baza}{12}{section.3.1}
-\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{13}{section.3.2}
-\contentsline {section}{\numberline {3.3}Analiza rezultata}{14}{section.3.3}
-\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{15}{chapter.4}
-\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{16}{chapter.5}
-\contentsline {chapter}{\numberline {6}Literatura}{17}{chapter.6}
+\contentsline {section}{\numberline {2.4}Klasifikacija}{11}{section.2.4}
+\contentsline {section}{\numberline {2.5}Vremensko zagla\IeC {\dj }ivanje}{12}{section.2.5}
+\contentsline {chapter}{\numberline {3}Ispitivanje rje\IeC {\v s}enja}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Ispitna baza}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Rezultati u\IeC {\v c}enja i ispitivanja}{14}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analiza rezultata}{15}{section.3.3}
+\contentsline {chapter}{\numberline {4}Opis programske implementacije rje\IeC {\v s}enja}{16}{chapter.4}
+\contentsline {chapter}{\numberline {5}Zaklju\IeC {\v c}ak}{17}{chapter.5}
+\contentsline {chapter}{\numberline {6}Literatura}{18}{chapter.6}
