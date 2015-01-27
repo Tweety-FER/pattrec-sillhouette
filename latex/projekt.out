@@ -1,0 +1,21 @@
+\BOOKMARK [0][-]{chapter.1}{Projektni zadatak}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Opis projektnog zadatka}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Pregled i opis srodnih rje\235enja}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Konceptualno rje\235enje zadatka}{chapter.1}% 4
+\BOOKMARK [2][-]{subsection.1.3.1}{Baza}{section.1.3}% 5
+\BOOKMARK [2][-]{subsection.1.3.2}{Arhitektura sustava}{section.1.3}% 6
+\BOOKMARK [0][-]{chapter.2}{Postupak rje\235avanja zadatka}{}% 7
+\BOOKMARK [1][-]{section.2.1}{Izdvajanje pozadine}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.1.1}{Transformacija slike u boji u sliku intenziteta}{section.2.1}% 9
+\BOOKMARK [2][-]{subsection.2.1.2}{Statisticki model izdvajanja pozadine}{section.2.1}% 10
+\BOOKMARK [1][-]{section.2.2}{Reprezentacija siluete}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Izlucivanje vektora znacajki}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Klasifikacija}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Vremensko zaglaivanje}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Ispitivanje rje\235enja}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Ispitna baza}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.2}{Rezultati ucenja i ispitivanja}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.3}{Analiza rezultata}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Opis programske implementacije rje\235enja}{}% 19
+\BOOKMARK [0][-]{chapter.5}{Zakljucak}{}% 20
+\BOOKMARK [0][-]{chapter.6}{Literatura}{}% 21

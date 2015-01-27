@@ -13,7 +13,11 @@
 \usepackage{underscore}
 \usepackage[section]{placeins}
 \usepackage{relsize}
+\usepackage{hyperref}
+\usepackage{amsmath}
 
+%Engleski termini
+\newcommand{\eng}[1]{(eng. \textit{#1})}
 
 \begin{document}
 
@@ -52,7 +56,7 @@ Opis problema koji zadatak obuhvaća. Što su ulazni podaci, a što zahtjevani i
 U nastavku slijedi opis radova srodnih tema koji će se koristiti kao materijal za učenje.
 
 
-\subsubsection{ • Andrea Bottino, Aldo Laurentini
+\subsubsection{Andrea Bottino, Aldo Laurentini\\
 A silhouette based technique for the reconstruction of human movement }
 
 
@@ -78,7 +82,7 @@ i podrazumijeva pronalaženje poze modela koji najbolje aproksimira stvarni pokr
 Sustav je testiran u virtualnom okruženju i na stvarnom slijedu slika.
 
 \subsubsection{ 
-Meghna Singh, Anup Basu, Mrinal Kr. Mandal
+Meghna Singh, Anup Basu, Mrinal Kr. Mandal\\
 Human activity recognition based on silhouette directionality
  }
  
@@ -96,36 +100,19 @@ otpornija na šum, sjenu i promjenu svjetla nego oduzimanje pozadine.
 Silueta je obično pod utjecajem šuma i može se sastojati od nepovezanih komponenata. Da bi
 se dobila „čista“ silueta, koriste se morfologičke operacije i analiza povezanih komponenti.
 Kontura siluete prikazana je lančanim kodom iz kojeg se onda određuju vektori smjera.
-Dobiveni vektori se normaliziraju. \\
-
+Dobiveni vektori se normaliziraju.
 
 Pretpostavka je da vrijedi: 
 
-
-% ne isplati se enumerate
-%\begin{enumerate}
-%  \setcounter{enumi}{1}
-%  \item
-%  Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na jednakoj
-%udaljenosti od kamere, imaju malu varijancu.
-%  \item
-%   Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na različitim
-% od kamere i s promjenjivom pozadinom, imaju malu varijancu.
-%	\item
-%	Varijanca normaliziranih vektora smjera za različite aktivnosti je velika.
-%\end{enumerate}
-
-
-1. Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na jednakoj
+\begin{enumerate}
+\item Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na jednakoj
 udaljenosti od kamere, imaju malu varijancu.
-
-2. Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na različitim
+\item Normalizirani vektori smjera, za različite izvođače za iste aktivnosti na različitim
 udaljenostima od kamere i s promjenjivom pozadinom, imaju malu varijancu.
+\item Varijanca normaliziranih vektora smjera za različite aktivnosti je velika.
+\end{enumerate}
 
-3. Varijanca normaliziranih vektora smjera za različite aktivnosti je velika.
-\newline
-
-Vektori se grupiraju k-centroid algoritmom grupiranja (eng. k-means clustering).
+Vektori se grupiraju k-centroid algoritmom grupiranja \eng{k-means clustering}.
 Zbog mogućeg lošeg izdvajanja siluete, može doći do velikih varijanci vektora smjera
 susjednih okvira i uzrokovati pogrešne odluke te se, stoga, koristi zaglađivanje.
 Točnost algoritma varira između 85\% i 99\% za osam aktivnosti, kada se ne koristi
@@ -136,7 +123,7 @@ određivanje pet osnovnih aktivnosti: uspravno stajanje, sjedenje, čučanje, le
 pokazivanje.
 
 
-\subsubsection{ Liang Wang, Weiming Hu, Tieniu Tan
+\subsubsection{ Liang Wang, Weiming Hu, Tieniu Tan\\
 Recent developments in human motion analysis
  }
 
@@ -161,26 +148,32 @@ značajki.
 
 Razumijevanje ljudskog pokreta uključuje raspoznavanje akcija te njihov opis. Opće tehnike
 koje se koriste za usporedbu vremenski zavisnih podataka su: dinamično savijanje vremena
-(eng. Dynamic time-warping), skriveni markovljevi modeli i neuronske mreže. Metode za
+\eng{Dynamic time-warping}, skriveni markovljevi modeli i neuronske mreže. Metode za
 raspoznavanje akcija su: uspoređivanje predložaka, pristup prostoru stanja i semantički opis.
 
 \section{Konceptualno rješenje zadatka}
 
 \subsection{Baza}
 
-Baza koju ćemo koristiti će biti Weizman baza. Baza se sastoji od 90 snimaka podijeljenih u
+Baza koju ćemo koristiti će biti Weizman baza\footnote{Dostupna na http://www.wisdom.weizmann.ac.il/~vision/SpaceTimeActions.html}. Baza se sastoji od 90 snimaka podijeljenih u
 10 aktivnosti, znači sadrži 9 snimaka za svaku aktivnost. Aktivnosti sadržane u bazi koje se
-mogu prepoznavati su: \\
-• hodanje, \\
-• trčanje, \\
-• skakanje, \\
-• hodanje u stranu, \\
-• savijanje, \\
-• mahanje jednom rukom, \\
-• mahanje s obje ruke, \\
-• skakanje na mjestu, \\
-• skakanje s ispruženim rukama, \\
-• preskakivanje. \\
+mogu prepoznavati su:
+
+\begin{enumerate}
+\item hodanje$\star$,
+\item trčanje$\star$,
+\item skakanje,
+\item hodanje u stranu,
+\item savijanje$\star$,
+\item mahanje jednom rukom$\star$,
+\item mahanje s obje ruke,
+\item skakanje na mjestu$\star$,
+\item skakanje s ispruženim rukama,
+\item preskakivanje
+\end{enumerate}
+
+
+U sklopu ovog projekta korišteno je samo 5 od 10 aktivnosti, odnosno one aktivnosti označene zvijezdicom ($\star$) u prethodnoj listi.
 
 Snimke su snimane statičnom kamerom rezolucije 180 x 144 piksela. Na snimkama je
 prisutan šum u obliku hodanja s psom ili nošenja torbe. Snimke sadrže homogenu pozadinu
@@ -207,18 +200,22 @@ primjeri snimaka hodanja i trčanja i pripadnih silueta.
 
 \subsection{Arhitektura sustava}
 
-Sustav možemo podjeliti na sljedećih 5 modula: \\
-• izdvajanje siluete, \\
-• reprezentacija siluete, \\
-• izdvajanje vektora značajki i normalizacija, \\
-• klasifikacija, \\
-• vremensko zaglađivanje \\
-Slika 1.3 prikazuje blok shemu sustava.
-\newline
-\begin{figure}[ht!]
+Sustav možemo podjeliti na sljedećih 5 modula:
+\begin{itemize}
+\item izdvajanje siluete,
+\item reprezentacija siluete,
+\item izdvajanje vektora značajki i normalizacija,
+\item klasifikacija,
+\item vremensko zaglađivanje
+\end{itemize}
+
+Slika \ref{img:blok} prikazuje blok shemu sustava.
+
+\begin{figure}[ht]
 \centering
 \includegraphics[width=170mm]{arhitektura.png}
 \caption{ Blok shema sustava \label{overflow}}
+\label{img:blok}
 \end{figure}
 
 Ulaz u sustav je snimka na kojoj osoba obavlja određenu aktivnost. Na svakoj slici snimke se
@@ -229,46 +226,50 @@ piksela pozadine početnih N slika, na kojima osoba nije prisutna. Ova metoda je
 jednostavnijih metoda, poput oduzimanja pozadine. Za svaki piksel se računa prag kao
 maksimalna razlika očekivanja i intenziteta sive boje kod početnih N slika. Pripada li piksel
 silueti se određuje na sljedeći način: 
-\newline
-• ako je razlika intenziteta piksela i očekivanja intenziteta piksela manja od praga, piksel
-pripada pozadini, \\
-• inače piksel pripada silueti \\
-\newline
+
+\begin{itemize}
+\item ako je razlika intenziteta piksela i očekivanja intenziteta piksela manja od praga, piksel
+pripada pozadini
+\item inače piksel pripada silueti
+\end{itemize}
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=60mm]{pozadina1.png}
 \caption{ Izdvajanje siluete od pozadine \label{overflow}}
+\label{img:bgfb}
 \end{figure}
 
-
-
-Zatim se izlučuje kontura siluete primjenom Gauss-ovog filtra. Izlaz prvog modula je slika
+Zatim se izlučuje kontura siluete primjenom Gaussovog filtra. Izlaz prvog modula je slika
 koja sadrži konturu siluete.
-\newline
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=60mm]{pozadina2.png}
 \caption{ Izlučivanje konture siluete \label{overflow}}
+\label{img:contourextr}
 \end{figure}
-
-
 
 Drugi modul radi reprezentaciju konture siluete pomoću lančanog koda. Lančani kod govori
 u koju stranu se moramo pomaknuti da od jednog piksela konture dođemo do sljedećeg
-piksela konture. Na slici 1.6 prikazan je lančani kod sa sljedećim oznakama: \\
-• kod 0 ima piksel koji je iznad trenutnog piksela, \\
-• kod 1 ima piksel koji je gore-desno od trenutnog piksela, \\
-• kod 2 ima piksel koji je desno od trenutnog piksela, \\
-• kod 3 ima piksel koji je dolje-desno od trenutnog piksela, \\
-• kod 4 ima piksel koji je ispod trenutnog piskela, \\
-• kod 5 ima piksel koji je dolje-lijevo od trenutnog piksela, \\
-• kod 6 ima piksel koji je lijevo od trenutnog piksela, \\
-• kod 7 ima piksel koji je gore-lijevo od trenutnog piksela \\
-\newline
+piksela konture. Na slici 1.6 prikazan je lančani kod sa sljedećim oznakama:
+
+\begin{itemize}
+\item kod 0 ima piksel koji je iznad trenutnog piksela,
+\item kod 1 ima piksel koji je gore-desno od trenutnog piksela,
+\item kod 2 ima piksel koji je desno od trenutnog piksela,
+\item kod 3 ima piksel koji je dolje-desno od trenutnog piksela,
+\item kod 4 ima piksel koji je ispod trenutnog piskela,
+\item kod 5 ima piksel koji je dolje-lijevo od trenutnog piksela,
+\item kod 6 ima piksel koji je lijevo od trenutnog piksela,
+\item kod 7 ima piksel koji je gore-lijevo od trenutnog piksela
+\end{itemize}
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=160mm]{lancanikod.png}
 \caption{ Prikaz lančanog koda \label{overflow}}
+\label{img:chaincode}
 \end{figure}
 
 
@@ -278,8 +279,8 @@ se radi na temelju frekvencije pojavljivanja koda. Radi postizanja robusnosti us
 vektori se normaliziraju. Za svaki par slika, određuje se veličina kuta između normaliziranih
 vektora tih slika, te se ti kutevi šalju kao ulaz u sljedeći modul.
 
-Za svrhu klasificiranja koristimo k-centroidni algoritam grupiranja (eng. k-means clustering
-algorithm). Pošto algoritam grupiranja spada pod model nenadziranog učenja, prvo ćemo
+Za svrhu klasificiranja koristimo k-centroidni algoritam grupiranja \eng{k-means clustering
+algorithm}. Pošto algoritam grupiranja spada pod model nenadziranog učenja, prvo ćemo
 odrediti centroide snimaka na kojima znamo koja se aktivnost odvija. Zatim će se na
 nepoznatim primjerima klasifikacija vršiti uzimanjem minimalne udaljenosti centroida.
 
@@ -305,28 +306,32 @@ Prvi korak postupka prepoznavanje aktivnosti osobe je izdvajanje siluete osobe o
 
 Prvi korak izdvajanja pozadine je pretvorba slike u boji u sliku intenziteta sive boje. Na taj način se postize manja razlika vrijednosti piksela te se odvajanje siluete od pozadine može provesti uspješnije. Transformacija se provodi upotrebom CCIR 601 standarda. Standard CCIR 601 prilikom transformacije sustava uzima u obzir da ljudsko oko ne vidi svaku boju jednako, neke boje vidi intenzivnije a neke slabije. Ljudsko oko zelenu boju percipira najintezivnije, potom crvenu pa plavu. U skladu s tim transformacija se vrši otežanom sumom vrijednosti intenziteta crvene, zelene i plave boje na sljedeći način:
 
-$$ Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B. $$
+\begin{equation}
+Y = 0.299 \cdot R + 0.587 \cdot G + 0.114 \cdot B.
+\end{equation}
 
 \subsection{Statistički model izdvajanja pozadine}
 
 Nakon dobivanja slike u intenzitetu sive boje, nad slikom se provodi postupak izdvajanje pozadine statističkim modelom. Statistički model se definira izračunom varijance i očekivanja intenziteta svakog piksela. Pretpostavka je da u početnih N slika snimke će se prikazivati samo pozadina, te se varijanca i očekivanje računaju na tih N početnih slika na sljedeći način:
 
-	$$u(x,y) = \frac{1}{N} \cdot  \sum (p(x,y;i)),$$
+\begin{equation}
+u(x,y) = \frac{1}{N} \cdot  \sum (p(x,y;i))
+\end{equation}
 
-\vspace{0.4cm}
+Pri tome je je $u(x,y)$ očekivanje intenzite piksela na poziciji $(x,y)$, $p(x,y;i)$ je vrijednost intenziteta piksela na pozicij $(x,y$) na slici $i$. Time se dobiva robusnost i točnije prepoznavanje u odnosu na jednostavnije modele oduzimanja pozadine. Nakon određivanja varijance i očekivanja intenziteta svakog piksela određuje se prag intenziteta kojeg mora preći piksel na novoj slici da bi se smatrao pikselom siluete. Prag se određuje kao maksimalna razlika očekivanja intenziteta pojedinog piksela i vrijednosti piksela na početnim slikama na temelju kojih se računala varijanca i očekivanje.
 
-gdje je u(x,y) očekivanje intenzite piksela na pozixiji x,y, p(x,y;i) je vrijednost intenziteta piksela na pozicij x,y na slici i. Time se dobiva robusnost i točnije prepoznavanje u odnosu na jednostavnije modele oduzimanja pozadine. Nakon određivanja varijance i očekivanja intenziteta svakog piksela određuje se prag intenziteta kojeg mora preći piksel na novoj slici da bi se smatrao pikselom siluete. Prag se određuje kao maksimalna razlika očekivanja intenziteta pojedinog piksela i vrijednosti piksela na početnim slikama na temelju kojih se računala varijanca i očekivanje.
+\begin{equation}
+T(x,y) = \max{ \big|u(x,y) - p(x,y;i)\big|}, 1 \leq i \leq N
+\end{equation}
 
-$$T(x,y) = \max{ \big|u(x,y) - p(x,y;i)\big|}, 1 \leq i \leq N,$$
-
-gdje je T(x,y) prag intenziteta piksela x,y.
+Gdje je $T(x,y)$ prag intenziteta piksela $(x,y)$.
 
 Potom se na slikama na kojima je objekt prisutan pripadnost piksela klasificira na sljedeći način:
-\newline
-  Ako: 
-  $$ \big|p(x,y;k - u(x,y)\big| < T(x,y),$$
-      zaključujemo da piksel pripada pozadini,
-  a inače piksel pripada silueti
+Piksel pripada silueti samo ukoliko vrijedi jednadžba \ref{eq:belongs}.
+
+\begin{equation} \label{eq:belongs}
+\big|p(x,y;k - u(x,y)\big| < T(x,y)
+\end{equation}
       
 Prednost ovog načina izdvajanja pozadine je već spomenuta robusnost zbog mogućnosti izgradnje razdiobe za svaki piksel slike. No u slučaju da je objekt prisutan od prve slike, moguće su pogreške u izdvajanju pozadine u prvih par slika jer nije određrena razdioba intenziteta.
 
@@ -334,27 +339,113 @@ Prednost ovog načina izdvajanja pozadine je već spomenuta robusnost zbog mogu�
 \section{Reprezentacija siluete}
 
 \section{Izlučivanje vektora značajki}
+\label{sec:silextraction}
+
+U ovom koraku izlučuju se korisne značajke iz chain koda siluete. Ulaz u modul opisan u ovom odjeljku je jedan ili više chain kodova, a izlaz jednak broj vektora značajki izvučenih iz tih chain kodova. Kao relevantne značajke u ovom projektu koriste se frekvencije pojavljivanja svih vrijednosti vektora smjera. To znači da će modul iz ulaznog chain koda stvoriti histogram s 8 vrijednosti (vektor smjera može poprimiti 8 vrijednosti) koje predstavljaju normalizirane vrijednosti frekvencije pojavljivanja vektora smjera.
+
+Prvi korak modula je jednostavno prebrojavanje pojavljivanja svih vrijednosti vektora smjera. Potom se te vrijednosti normaliziraju. Normalizacijom srednja vrijednost vektora izlučenih značajki postaje nula, a vrijednosti vektora će sada biti u intervalu $ [- \frac{1}{8} , 1- \frac{1}{8} ] $. Normalizacija se vrši po formuli:
+\begin{equation}
+\phi(i) = \frac{|f(i)|}{\sum(f(i))} - \frac{1}{8}
+\end{equation}
+
+$\phi(i)$ predstavlja normaliziranu frekvenciju pojavljivanja jednog vektora smjera, a $f(i)$ standardnu frekvenciju dobivenu prebrojavanjem pojavljivanja.
+Ta frekvencija se dijeli sa sumom frekvencija pojavljivanja svih vektora smjera i tako se svodi na vrijednost u intervalu $[0, 1]$. Dodatnim oduzimanjem vrijednosti $ \frac{1}{K}$ (u ovom slučaju je $K=8$ pa je ta vrijednost $\frac{1}{8}$ ) se srednja vrijednost vektora izlučenih značajki izjednačava s nulom.
+Normalizacijom smo postigli to da naš program ne ovisi o tome koliko je osoba koja radi neku radnju udaljena od kamere jer je sustav postao otporan
+na razlike u veličini chain koda. Drugim riječima, razlika između dva vektora koji predstavljaju istu radnju na različitim udaljenostima od kamere će biti malena, dok će razlika između 2 vektora koji predstavljaju dvije različite radnje biti daleko veća.
+
+% TODO (sad dvije slike histograma onih, npr pokazivanje lijevo i desno)
+
+Razlike između histograma koji predstavljaju različite radnje su lako vidljive, kao što i vidimo na priloženim slikama (labele slika). Te razlike će biti dovoljne za klasificiranje različitih radnji.
 
 \section{Klasifikacija}
 
+Za konačni proces klasifikacije koristimo normalizirane vektorske reprezentacije silueta dobivene u koraku \ref{sec:silextraction}. Nad tim vektorima vršimo algoritam grupiranja k-centroida \eng{k-means clustering}. Kao mjera udaljenosti koristi se kutna udaljenost između vektora, kao što je definirana na \ref{eq:angdist}, pri čemu je $\theta$ kut između vektora.
+
+\begin{equation} \label{eq:angdist}
+\Omega_{\vec{a},\vec{b}} = \frac{\vec{a} \cdot \vec{b}}{|a| \cdot |b|} = 1 - \cos(\theta)
+\end{equation}
+
+Budući da su vektori normalizirani, jednadžba \ref{eq:angdist} svodi se na \ref{eq:nangdist}.
+
+\begin{equation} \label{eq:nangdist}
+\Omega_{\hat{a},\hat{b}} = 1 - \hat{a} \cdot \hat{b}
+\end{equation}
+
+Pri tome se dobiva $k$ centroida, pri čemu je u našem slučaju $k = 8$. Budući da je poznato da je algoritam nerobustan u ovisnosti o početnim centroidima, ovaj se proces pokreće $10$ puta, te su zadržava najbolji rezultat. Kao početni centroidi uzete su nasumično odabrane vrijednosti u granicama vrijednosti koje se pojavljaju u danim vektorima.
+
+Nakon ponavljanja procesa, svakoj grupi centroida pridružuje se oznaka. Ona se dobiva uspoređivanjem svakog centroida sa centroidima klasificiranih primjera (odnosno centroidima videa u skupu za učenje). Pri tome više centroida može dobiti istu oznaku.
 
 \section{Vremensko zaglađivanje}
 
+%N.B. : Nakon zaglađivanja, opet se vrti klasifikacija!
+
 \chapter{Ispitivanje rješenja}
 
-(do 10 stranica)
-
 \section{Ispitna baza}
+U ovom projektu koristili smo Weizman bazu koja se sastoji od 90 snimaka podijeljenih u
+10 aktivnosti (9 snimaka za svaku aktivnost). Aktivnosti iz baze koje se mogu
+ prepoznavati našim programom su:
 
-Opisati ispitnu bazu, tipove i broj različitih uzoraka u bazi te na koji su način uzorci iz baze korišteni prilikom učenja i ispitivanja rješenja projektnog zadatka. 
+\begin{itemize}
+\item hodanje,
+\item trčanje,
+\item skakanje na mjestu,
+\item mahanje jednom rukom,
+\item saginjanje.
+\end{itemize}
+
+Snimke su snimane statičnom kamerom rezolucije 180 x 144 piksela. Na snimkama je 
+prisutan šum u obliku hodanja sa psom ili nošenja torbe. Snimke sadrže homogenu pozadinu
+radi lakšeg izdvajanja pozadine od siluete.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.7]{running.png}
+\caption{Kadar iz videa -- akcija trčanja}
+\label{img:run}
+\end{figure}
+
+Pri klasifikaciji smo 9 ponuđenih snimaka za svaku akciju razdijelili na 2 skupa: skup za treniranje i skup za testiranje. Skup za treniranje sadrži 8 snimaka, a skup za testiranje jednu.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.7]{walking.png}
+\caption{Kadar iz videa -- akcija hodanja}
+\label{img:walk}
+\end{figure}
+
+Dva primjera kadrova iz korištenih videa dani su na slikama \ref{img:walk}, te \ref{img:run}.
 
 \section{Rezultati učenja i ispitivanja}
 
-Prikazati statističke podatke o uspješnosti rješenja prilikom učenja/ispitivanja te opisati eksperimente na temelju kojih su podaci dobiveni.
+Svaka grupa snimaka iste akcije podijeljena je na dva dijela -- skup za učenje, te skup za testiranje. Optimizacija hiperparametara vršena je validacijom izostavljanja jedne snimke \eng{leave-one-out validation}. Odnosno, treniranje je ponavljano $n$ puta (gdje $n = 8$, odnosno broj snimaka u skupu za učenje), uz izostavljanje jedne od snimaka pri svakom koraku. Ostatak je korišten za učenje, dok je provjera vršena na zadnjoj od tih snimaka. Nakon ponavljanja, uzet je prosjek greške kao ocjena uspješnosti.
+
+Pri tome su optimirani parametri broj grupa u koje se vrši grupiranje, te parametri predobrabe (zaglađivanja) slike.
+
+Konačno ispitivanje vršilo se nad skupom od jedne snimke za svaku akciju. Kao mjera gubitka korišten je 0-1 gubitak \eng{zero-one loss}. Kako metoda grupiranja (k-means) čak i uz 10 ponavljanja daje razlike u rezultatima, postotak točnosti nije uvijek identičan, već ima malu varijancu ($\approx 1.5\%$).
+
+\begin{table}
+\centering
+\begin{tabular}{c c | c c}
+\toprule
+\multicolumn{2}{c|}{Greška, Učenje (\%)} & \multicolumn{2}{|c}{Greška, Ispitivanje (\%)}\\
+\cmidrule(r){1-2} \cmidrule(l){3-4}
+$\mu$ & $\sigma$ & $\mu$ & $\sigma$ \\
+\midrule
+64.3 & 1.6 & 60.1 & 1.3 \\
+\bottomrule
+\end{tabular}
+\caption{Greške (30 izvođenja)}
+\label{tbl:errs}
+\end{table}
+
+Konačni iznosi grešaka dani su u tablici \ref{tbl:errs}. Ti su rezultati dobiveni uprosječivanjem na 30 izvođenja, a precizni su do na jednu decimalu.
 
 \section{Analiza rezultata}
 
 Analizirati uzroke rezultata ispitivanja, povezati sa uzorcima u bazi i algoritmima korištenim u rješenju. Raspraviti moguća poboljšanja.
+
+% Možda napomenuti da su nam rezultati bolji (?!?) sa razlomljenim siluetama i izdvajanjem samo najjačih pokreta
 
 \chapter{Opis programske implementacije rješenja}
 
