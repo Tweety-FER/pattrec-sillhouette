@@ -8,6 +8,7 @@ from matplotlib.figure import Figure
 import segmentation
 import numpy as np
 import matplotlib.pyplot as plt
+from Classify import norm_angle_dist
 
 graph = None
 
@@ -44,6 +45,9 @@ def prikaziVektore():
         ax.plot(rng, vector)
     ax.grid()
     ax.set_ylim(-1,1)
+    ax.set_xlabel(r'dimenzija')
+    ax.set_ylabel(r'vrijednost')
+    ax.set_title('Vektor siluete')
     
     canvas.delete('all')
 
@@ -55,7 +59,34 @@ def prikaziVektore():
     graph.show()
 
 def prikaziKuteve():
-    return
+    global graph
+
+    vectors = get_frames()
+
+    count = len(vectors)
+    angles = []
+    for i in xrange(count - 1):
+        angles.append(norm_angle_dist(vectors[i], vectors[i + 1]))         
+
+    xs = np.arange(1, count)    
+
+    f = Figure(dpi=100, figsize=(4,4))
+    ax = f.add_subplot(111)
+    
+    ax.grid()
+    ax.plot(xs, np.array(angles))
+    ax.set_xlim(1, count)
+    ax.set_xlabel(r'$i$')
+    ax.set_ylabel(r'$\theta_{i,i+1}$')
+    ax.set_title('Kutna udaljenost susjednih kadrova')
+    canvas.delete('all')
+    
+    if graph != None:
+        graph.get_tk_widget().destroy()
+
+    graph = FigureCanvasTkAgg(f, canvas)
+    graph.get_tk_widget().pack(fill=X)
+    graph.show() 
 
 def fileChooser():
     Tk().withdraw()

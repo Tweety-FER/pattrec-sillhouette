@@ -1,0 +1,320 @@
+Processing ../dataset/test/ido_bend.avi
+\begin{table}
+\centering
+\begin{tabular}{l | l}
+\toprule
+\Klasifikacija & Stvarno \\
+\midrule
+pjump & bend \\
+walk & bend \\
+pjump & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+bend & bend \\
+bend & bend \\
+bend & bend \\
+pjump & bend \\
+pjump & bend \\
+pjump & bend \\
+wave & bend \\
+pjump & bend \\
+wave & bend \\
+wave & bend \\
+wave & bend \\
+\bottomrule
+\end{tabular}
+\end{table}
+Processing ../dataset/test/lena_walk2.avi
+\begin{table}
+\centering
+\begin{tabular}{l | l}
+\toprule
+\Klasifikacija & Stvarno \\
+\midrule
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+walk & walk \\
+\bottomrule
+\end{tabular}
+\end{table}
+Processing ../dataset/test/lyova_run.avi
+\begin{table}
+\centering
+\begin{tabular}{l | l}
+\toprule
+\Klasifikacija & Stvarno \\
+\midrule
+wave & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+run & run \\
+\bottomrule
+\end{tabular}
+\end{table}
+Processing ../dataset/test/moshe_wave1.avi
+\begin{table}
+\centering
+\begin{tabular}{l | l}
+\toprule
+\Klasifikacija & Stvarno \\
+\midrule
+bend & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+wave & wave \\
+bend & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+walk & wave \\
+wave & wave \\
+wave & wave \\
+wave & wave \\
+bend & wave \\
+bend & wave \\
+bend & wave \\
+\bottomrule
+\end{tabular}
+\end{table}
+Processing ../dataset/test/shahar_pjump.avi
+\begin{table}
+\centering
+\begin{tabular}{l | l}
+\toprule
+\Klasifikacija & Stvarno \\
+\midrule
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+pjump & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+bend & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+pjump & pjump \\
+bend & pjump \\
+pjump & pjump \\
+\bottomrule
+\end{tabular}
+\end{table}
+0.609665427509

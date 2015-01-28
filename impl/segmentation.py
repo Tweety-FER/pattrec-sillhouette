@@ -115,7 +115,7 @@ def process_frames(source, display = False, clear_iters = 1, blur_kernel = (5, 5
         erosion = cv2.erode(blur, kernel, iterations = clear_iters)
         dilatation = cv2.dilate(erosion, kernel, iterations = clear_iters)
 
-        cv2.accumulateWeighted(dilatation, avg, 0.05)
+        cv2.accumulateWeighted(dilatation, avg, 0.025) # HERE
         frames.append(dilatation)
 
         frame_cnt += 1
@@ -183,11 +183,25 @@ def test_from_file(root, display = False, use_smoothing = False):
         action_guessed = classify(join(root, t_file), display = display, use_smoothing = use_smoothing)
         action_real = action_real * len(action_guessed)
 
+        print "\\begin{table}"
+        print "\\centering"
+        print "\\begin{tabular}{l | l}"
+        print "\\toprule"
+        print "\\Klasifikacija & Stvarno \\\\"
+        print "\\midrule"
+
+        for i in xrange(len(action_guessed)):
+            print action_guessed[i], "&", action_real[i], "\\\\"
+
+        print "\\bottomrule"
+        print "\\end{tabular}"
+        print "\\end{table}"        
+
         real += action_real
         guessed += action_guessed
 
-    print guessed
-    print real
+    #print guessed
+    #print real
 
     return np.float32(sum([1 if guessed[i] == real[i] else 0 for i in xrange(len(real))])) / len(real)
 
